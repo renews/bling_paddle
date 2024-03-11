@@ -4,8 +4,8 @@ defmodule Bling.Paddle.MixProject do
   def project do
     [
       app: :bling_paddle,
-      version: "0.2.0",
-      elixir: "~> 1.14",
+      version: "0.2.1",
+      elixir: "~> 1.16.1",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       aliases: aliases(),
@@ -38,16 +38,16 @@ defmodule Bling.Paddle.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.29.4"},
+      {:ex_doc, "~> 0.31.2"},
       {:phoenix, "~> 1.7.2"},
-      {:plug, "~> 1.14"},
-      {:httpoison, "~> 2.0"},
+      {:plug, "~> 1.15.3"},
+      {:httpoison, "~> 2.2.0"},
       {:php_serializer, "~> 2.0"},
-      {:jason, "~> 1.4"},
-      {:ecto_sql, "~> 3.6"},
+      {:jason, "~> 1.4.1"},
+      {:ecto_sql, "~> 3.10.2"},
       {:postgrex, ">= 0.0.0", only: :test},
       {:faker, "~> 0.17", only: :test},
-      {:mox, "~> 1.0", only: :test}
+      {:mox, "~> 1.0.2", only: :test}
     ]
   end
 
